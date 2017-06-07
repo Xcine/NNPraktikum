@@ -8,7 +8,7 @@ from report.evaluator import Evaluator
 
 
 def main():
-    data = MNISTSeven("../data/mnist_seven.csv", 3000, 1000, 1000)
+    data = MNISTSeven("/Users/Georg/Documents/PythonTest/NNPraktikum/data/mnist_seven.csv", 3000, 1000, 1000)
     myStupidClassifier = StupidRecognizer(data.trainingSet,
                                           data.validationSet,
                                           data.testSet)
@@ -16,7 +16,7 @@ def main():
                                         data.validationSet,
                                         data.testSet,
                                         learningRate=0.005,
-                                        epochs=30)
+                                        epochs=50)
     
     # Train the classifiers
     print("=========================")
